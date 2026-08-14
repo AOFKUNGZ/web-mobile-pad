@@ -1,2 +1,4 @@
 # ไม่อัปโหลด dependencies ที่ติดตั้งในเครื่อง เพราะติดตั้งใหม่ได้จาก package-lock.json
 node_modules/
+
+.vercel

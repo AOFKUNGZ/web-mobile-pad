@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/src/index.html" },
+    { "source": "/index.html", "destination": "/src/index.html" },
+    { "source": "/reg.html", "destination": "/src/reg.html" },
+    { "source": "/Contact.html", "destination": "/src/Contact.html" },
+    { "source": "/calendar.html", "destination": "/src/calendar.html" },
+    { "source": "/input.css", "destination": "/src/input.css" },
+    { "source": "/output.css", "destination": "/src/output.css" },
+    { "source": "/script.js", "destination": "/src/script.js" }
+  ]
+}
