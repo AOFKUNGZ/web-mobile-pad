@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ติดต่อสาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยแม่โจ้" />
+    <link rel="stylesheet" href="input.css" />
+    <script src="script.js" defer></script>
+    <title>ติดต่อสาขา | CSMJU Studio</title>
+  </head>
+  <body class="contact-page">
+    <nav aria-label="เมนูหลัก">
+      <a class="logo" href="index.html" aria-label="กลับสู่หน้าแรก"><img src="../imgs/CS-MJU.png" alt="CSMJU Studio" /></a>
+      <button class="hamburger" id="hamburger-btn" type="button" aria-label="เปิดเมนู" aria-controls="nav-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="menu" id="nav-menu">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="reg.html">บริการทะเบียน</a></li>
+        <li><a href="calendar.html">ปฏิทินการศึกษา</a></li>
+        <li><a class="active-link" href="Contact.html">ติดต่อสาขา</a></li>
+      </ul>
+    </nav>
+
+    <main class="contact-shell">
+      <header class="contact-header">
+        <p class="eyebrow"><span></span> Get in touch</p>
+        <h1>เรายินดี<br /><em>ให้ความช่วยเหลือ</em></h1>
+        <p>มีคำถามเกี่ยวกับการเรียน การลงทะเบียน หรือบริการของสาขา? ส่งข้อความถึงเราได้เลย</p>
+      </header>
+
+      <section class="contact-layout" aria-label="ช่องทางติดต่อและแบบฟอร์ม">
+        <div class="contact-details">
+          <article class="contact-item">
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <div><small>อีเมล</small><a href="mailto:cs@mju.ac.th">cs@mju.ac.th</a><p>สำหรับสอบถามข้อมูลทั่วไป</p></div>
+          </article>
+          <article class="contact-item">
+            <span class="contact-icon" aria-hidden="true">☎</span>
+            <div><small>โทรศัพท์</small><a href="tel:+6653873400">053 873 400</a><p>วันจันทร์–ศุกร์ เวลา 08:30–16:30 น.</p></div>
+          </article>
+          <article class="contact-item">
+            <span class="contact-icon" aria-hidden="true">⌖</span>
+            <div><small>ที่ตั้ง</small><strong>อาคาร 75 ปี แม่โจ้</strong><p>คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้ จ.เชียงใหม่ 50290</p></div>
+          </article>
+          <div class="contact-hours"><span>เวลาทำการ</span><strong>08:30 — 16:30 น.</strong><p>ปิดวันเสาร์–อาทิตย์ และวันหยุดราชการ</p></div>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <div><p class="eyebrow"><span></span> Send a message</p><h2>ส่งข้อความถึงเรา</h2><p>กรอกข้อมูลด้านล่าง แล้วทีมงานจะตอบกลับโดยเร็วที่สุด</p></div>
+          <div class="form-row"><label>ชื่อ–นามสกุล<input type="text" name="name" placeholder="กรอกชื่อของคุณ" required /></label><label>อีเมล<input type="email" name="email" placeholder="example@email.com" required /></label></div>
+          <label>หัวข้อ<select name="topic"><option>สอบถามข้อมูลทั่วไป</option><option>การลงทะเบียนเรียน</option><option>การเรียนและตารางเรียน</option><option>อื่น ๆ</option></select></label>
+          <label>ข้อความ<textarea name="message" rows="5" placeholder="บอกเราว่าต้องการความช่วยเหลือเรื่องใด" required></textarea></label>
+          <button class="button button-primary" type="submit">ส่งข้อความ <span aria-hidden="true">→</span></button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

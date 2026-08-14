@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ปฏิทินการศึกษา สาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยแม่โจ้" />
+    <link rel="stylesheet" href="input.css" />
+    <script src="script.js" defer></script>
+    <title>ปฏิทินการศึกษา | CSMJU Studio</title>
+  </head>
+  <body class="calendar-page">
+    <nav aria-label="เมนูหลัก">
+      <a class="logo" href="index.html" aria-label="กลับสู่หน้าแรก"><img src="../imgs/CS-MJU.png" alt="CSMJU Studio" /></a>
+      <button class="hamburger" id="hamburger-btn" type="button" aria-label="เปิดเมนู" aria-controls="nav-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="menu" id="nav-menu">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="reg.html">บริการทะเบียน</a></li>
+        <li><a class="active-link" href="calendar.html">ปฏิทินการศึกษา</a></li>
+        <li><a href="Contact.html">ติดต่อสาขา</a></li>
+      </ul>
+    </nav>
+
+    <main class="calendar-shell">
+      <header class="calendar-header">
+        <div>
+          <p class="eyebrow"><span></span> Academic calendar</p>
+          <h1>ปฏิทินการศึกษา</h1>
+          <p>ติดตามกำหนดการสำคัญของภาคการศึกษา 1 / 2569 ได้ในหน้าเดียว</p>
+        </div>
+        <a class="back-home" href="index.html">← กลับหน้าหลัก</a>
+      </header>
+
+      <section class="calendar-controls" aria-label="ตัวเลือกปฏิทิน">
+        <label>ชุดปฏิทิน
+          <select aria-label="เลือกชุดปฏิทิน"><option>1000 : มหาวิทยาลัยบริหารศาสตร์</option></select>
+        </label>
+        <div class="calendar-year"><span>ปีการศึกษา</span><a class="is-current" href="#calendar-2569">2569</a><span>/</span><a href="#calendar-2570">2570</a></div>
+      </section>
+
+      <section class="month-overview" aria-label="ปฏิทินรายเดือน">
+        <div class="month-calendars" id="month-calendars"></div>
+        <aside class="selected-event" aria-live="polite">
+          <p class="eyebrow"><span></span> รายละเอียดกิจกรรม</p>
+          <p class="event-date" id="event-date">เลือกวันที่ที่มีจุดสีส้ม</p>
+          <h2 id="event-title">ยังไม่มีกิจกรรมที่เลือก</h2>
+          <p id="event-time">วันที่มีจุดสีส้มคือวันที่มีกำหนดการสำคัญ</p>
+        </aside>
+      </section>
+
+      <section class="calendar-card" id="calendar-2569" aria-labelledby="calendar-title">
+        <div class="calendar-card-heading"><div><p class="eyebrow"><span></span> ภาคการศึกษา 1 / 2569</p><h2 id="calendar-title">กำหนดการสำคัญ</h2></div><span class="calendar-status">กำลังดำเนินการ</span></div>
+        <div class="academic-table-wrap">
+          <table class="academic-table">
+            <thead><tr><th>รายการ</th><th>วันเริ่มต้น</th><th>วันสุดท้าย</th></tr></thead>
+            <tbody>
+              <tr class="major-row"><td>● &nbsp;ลงทะเบียนปกติ (ออนไลน์)</td><td>18 มิ.ย. 2569 00:01 น.</td><td>23 มิ.ย. 2569 23:59 น.</td></tr>
+              <tr><td>− &nbsp;ชั้นปี 1 (ตามรหัสปีเข้า)</td><td>19 มิ.ย. 2569 00:01 น.</td><td>19 มิ.ย. 2569 23:59 น.</td></tr>
+              <tr><td>− &nbsp;ชั้นปี 2 (ตามรหัสปีเข้า)</td><td>22 มิ.ย. 2569 08:30 น.</td><td>22 มิ.ย. 2569 23:59 น.</td></tr>
+              <tr><td>− &nbsp;ชั้นปี 3–4 (ตามรหัสปีเข้า)</td><td>23 มิ.ย. 2569 08:30 น.</td><td>23 มิ.ย. 2569 23:59 น.</td></tr>
+              <tr class="major-row"><td>● &nbsp;วันเปิดภาคการศึกษา</td><td>29 มิ.ย. 2569 08:30 น.</td><td>29 มิ.ย. 2569 16:30 น.</td></tr>
+              <tr class="major-row"><td>● &nbsp;ลงทะเบียนเพิ่ม / ลด / เปลี่ยนกลุ่ม</td><td>29 มิ.ย. 2569 08:30 น.</td><td>1 ก.ค. 2569 23:59 น.</td></tr>
+              <tr><td>− &nbsp;ช่วงยื่นคำร้องเพิ่มรายวิชา</td><td>29 มิ.ย. 2569 08:30 น.</td><td>1 ก.ค. 2569 23:59 น.</td></tr>
+              <tr><td>− &nbsp;ช่วงยื่นคำร้องเปลี่ยนกลุ่มรายวิชา</td><td>29 มิ.ย. 2569 08:30 น.</td><td>1 ก.ค. 2569 23:59 น.</td></tr>
+              <tr class="major-row"><td>● &nbsp;งดชำระเงินตามปกติ</td><td>6 ก.ค. 2569 08:30 น.</td><td>12 ก.ค. 2569 20:00 น.</td></tr>
+              <tr class="major-row"><td>● &nbsp;ช่วงพิมพ์ใบแจ้งหนี้ผ่านเว็บ</td><td>6 ก.ค. 2569 08:30 น.</td><td>12 ก.ค. 2569 20:00 น.</td></tr>
+              <tr class="major-row"><td>● &nbsp;ช่วงของการรักษาสภาพนักศึกษา</td><td>29 มิ.ย. 2569 08:30 น.</td><td>31 ก.ค. 2569 16:30 น.</td></tr>
+              <tr class="major-row"><td>● &nbsp;ช่วงวันสอบกลางภาค</td><td>24 ส.ค. 2569 08:30 น.</td><td>30 ส.ค. 2569 16:30 น.</td></tr>
+              <tr class="major-row"><td>● &nbsp;วันสุดท้ายของการเรียนการสอน</td><td>18 ต.ค. 2569 08:30 น.</td><td>18 ต.ค. 2569 16:30 น.</td></tr>
+              <tr class="major-row"><td>● &nbsp;ช่วงวันสอบปลายภาค</td><td>19 ต.ค. 2569 08:30 น.</td><td>1 พ.ย. 2569 16:30 น.</td></tr>
+              <tr class="major-row"><td>● &nbsp;วันปิดภาคการศึกษา</td><td>2 พ.ย. 2569 08:30 น.</td><td>2 พ.ย. 2569 16:30 น.</td></tr>
+              <tr class="major-row"><td>● &nbsp;วันประกาศผลการศึกษา</td><td>10 พ.ย. 2569 16:30 น.</td><td>10 พ.ย. 2569 23:30 น.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <p class="calendar-footnote">เวลาและกำหนดการอาจมีการเปลี่ยนแปลง โปรดติดตามประกาศจากสาขาอย่างสม่ำเสมอ</p>
+    </main>
+  </body>
+</html>

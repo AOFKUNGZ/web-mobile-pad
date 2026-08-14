@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ระบบทะเบียนสาขา สำหรับนักศึกษาและบุคลากร"
+    />
+    <link rel="stylesheet" href="input.css" />
+    <script src="script.js" defer></script>
+    <title>ระบบทะเบียนสาขา | CSMJU Studio</title>
+  </head>
+
+  <body>
+    <!-- แถบนำทางหลักของเว็บไซต์ -->
+    <nav aria-label="เมนูหลัก">
+      <!-- (* IMG) โลโก้เว็บไซต์จากโฟลเดอร์ imgs -->
+      <a class="logo" href="#home" aria-label="กลับสู่หน้าแรก">
+        <img src="../imgs/CS-MJU.png" alt="CSMJU Studio" />
+      </a>
+
+      <!-- ปุ่มเปิด-ปิดเมนูสำหรับหน้าจอมือถือ -->
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        type="button"
+        aria-label="เปิดเมนู"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- รายการเมนูหลักของระบบ -->
+      <ul class="menu" id="nav-menu">
+        <li><a class="active-link" href="#home">หน้าแรก</a></li>
+        <li><a href="reg.html">บริการทะเบียน</a></li>
+        <li><a href="calendar.html">ปฏิทินการศึกษา</a></li>
+        <li><a href="Contact.html">ติดต่อสาขา</a></li>
+      </ul>
+    </nav>
+
+    <main id="home">
+      <!-- ส่วนต้อนรับหลักของหน้าเว็บ -->
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span></span> คณะวิทยาศาสตร์-สาขาวิทยาการคอมพิวเตอร์
+          </p>
+          <!-- ชื่อสาขา: แยกบรรทัดเพื่อให้อ่านง่ายในทุกขนาดหน้าจอ -->
+          <h1 class="department-title">
+            <span>Science-Computer</span>
+            <em>MAEJO-<br />UNIVERSITY</em>
+          </h1>
+          <p class="hero-description">
+            เข้าถึงข้อมูลการเรียน การลงทะเบียน และบริการสำคัญได้อย่างรวดเร็ว
+            ปลอดภัย และใช้งานง่ายทุกอุปกรณ์
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="reg.html"
+              >เริ่มใช้บริการ <span aria-hidden="true">→</span></a
+            >
+            <a class="button button-secondary" href="calendar.html"
+              >ดูปฏิทินการศึกษา</a
+            >
+          </div>
+          <div class="hero-note">
+            <span aria-hidden="true">✓</span> เข้าถึงระบบได้ตลอด 24 ชั่วโมง
+          </div>
+        </div>
+      </section>
+
+      <!-- แสดงทางลัดสำหรับบริการที่นักศึกษาใช้งานบ่อย -->
+      <section
+        class="quick-services"
+        id="services"
+        aria-labelledby="services-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> บริการด่วน</p>
+            <h2 id="services-title">ทุกเรื่องทะเบียน<br />เริ่มได้ทันที</h2>
+          </div>
+          <p>เลือกบริการที่ต้องการ<br />เพื่อดำเนินการต่อ</p>
+        </div>
+        <div class="service-grid">
+          <a class="service-card card-blue" href="reg.html"
+            ><span class="service-icon">▤</span>
+            <h3>ลงทะเบียนเรียน</h3>
+            <p>เพิ่ม ถอน หรือเช็กรายวิชา</p>
+            <span class="card-arrow">→</span></a
+          >
+          <a class="service-card card-purple" href="#"
+            ><span class="service-icon">▥</span>
+            <h3>ตารางเรียน</h3>
+            <p>ดูตารางเรียนและตารางสอบ</p>
+            <span class="card-arrow">→</span></a
+          >
+          <a class="service-card card-orange" href="#"
+            ><span class="service-icon">★</span>
+            <h3>ผลการศึกษา</h3>
+            <p>ตรวจสอบเกรดและผลการเรียน</p>
+            <span class="card-arrow">→</span></a
+          >
+          <a class="service-card card-green" href="#"
+            ><span class="service-icon">฿</span>
+            <h3>ชำระค่าธรรมเนียม</h3>
+            <p>ตรวจสอบยอดและสถานะชำระ</p>
+            <span class="card-arrow">→</span></a
+          >
+        </div>
+      </section>
+
+      <!-- ส่วนกำหนดการสำคัญของภาคการศึกษา -->
+      <section
+        class="calendar-section"
+        id="calendar"
+        aria-labelledby="calendar-title"
+      >
+        <div class="calendar-copy">
+          <p class="eyebrow"><span></span> อัปเดตล่าสุด</p>
+          <h2 id="calendar-title">ปฏิทิน<br />การศึกษา</h2>
+          <p>ติดตามวันสำคัญ เพื่อไม่พลาดทุกกำหนดการของภาคเรียน</p>
+          <a href="calendar.html" class="text-link">ดูปฏิทินทั้งหมด <span>→</span></a>
+        </div>
+        <div class="timeline">
+          <article>
+            <time>15<br /><small>ส.ค.</small></time>
+            <div>
+              <span class="tag tag-blue">กำลังดำเนินการ</span>
+              <h3>ช่วงลงทะเบียนเรียน</h3>
+              <p>15–30 สิงหาคม 2569</p>
+            </div>
+          </article>
+          <article>
+            <time>01<br /><small>ก.ย.</small></time>
+            <div>
+              <span class="tag tag-purple">เร็ว ๆ นี้</span>
+              <h3>วันเปิดภาคการศึกษา</h3>
+              <p>1 กันยายน 2569</p>
+            </div>
+          </article>
+          <article>
+            <time>12<br /><small>ต.ค.</small></time>
+            <div>
+              <span class="tag tag-orange">กำหนดการ</span>
+              <h3>สอบกลางภาค</h3>
+              <p>12–18 ตุลาคม 2569</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ส่วนท้ายเว็บไซต์สำหรับช่องทางติดต่อ -->
+    <footer id="contact">
+      <!-- (* IMG) โลโก้เว็บไซต์ในส่วนท้าย -->
+      <a class="logo" href="#home">
+        <img src="../imgs/CS-MJU.png" alt="CSMJU Studio" />
+      </a>
+      <p>ระบบทะเบียนสาขา · เพื่อการเรียนรู้ที่ราบรื่น</p>
+      <a href="mailto:registry@example.ac.th">registry@example.ac.th</a>
+    </footer>
+  </body>
+</html>

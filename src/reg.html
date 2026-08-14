@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="หน้าลงทะเบียนเรียน ระบบทะเบียนสาขาวิทยาการคอมพิวเตอร์"
+    />
+    <link rel="stylesheet" href="input.css" />
+    <script src="script.js" defer></script>
+    <title>ลงทะเบียนเรียน | CSMJU Studio</title>
+  </head>
+
+  <body class="registration-page">
+    <!-- แถบนำทางสำหรับกลับสู่หน้าหลักและระบุชื่อระบบ -->
+    <nav aria-label="เมนูหลัก">
+      <!-- (* IMG) โลโก้เว็บไซต์จากโฟลเดอร์ imgs -->
+      <a class="logo" href="index.html" aria-label="กลับสู่หน้าแรก">
+        <img src="../imgs/CS-MJU.png" alt="CSMJU Studio" />
+      </a>
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        type="button"
+        aria-label="เปิดเมนู"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="nav-menu">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a class="active-link" href="reg.html">บริการทะเบียน</a></li>
+        <li><a href="calendar.html">ปฏิทินการศึกษา</a></li>
+        <li><a href="Contact.html">ติดต่อสาขา</a></li>
+      </ul>
+    </nav>
+
+    <main class="registration-shell">
+      <!-- ส่วนหัวแสดงข้อมูลนักศึกษาและภาคการศึกษาที่กำลังทำรายการ -->
+      <header class="registration-header">
+        <div>
+          <p class="eyebrow"><span></span> ระบบทะเบียนออนไลน์</p>
+          <h1>ลงทะเบียนเรียน</h1>
+          <p>ภาคการศึกษาที่ <strong>1 / 2569</strong></p>
+        </div>
+        <div class="student-card">
+          <span class="student-avatar">ก</span>
+          <div>
+            <small>รหัสนักศึกษา</small><strong>704101331</strong>
+            <p>นายสมคิด จิตองอาจ</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- แถบแจ้งสถานะและกำหนดวันลงทะเบียน -->
+      <section class="registration-notice" aria-label="สถานะการลงทะเบียน">
+        <span class="notice-icon">✓</span>
+        <div>
+          <strong>อยู่ในช่วงลงทะเบียนเรียน</strong>
+          <p>คุณสามารถเพิ่มหรือถอนรายวิชาได้ถึงวันที่ 30 สิงหาคม 2569</p>
+        </div>
+        <span class="status-pill">เปิดให้บริการ</span>
+      </section>
+
+      <!-- ตารางแสดงรายวิชาที่นักศึกษาลงทะเบียนในภาคเรียนนี้ -->
+      <section class="registration-panel" aria-labelledby="registered-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow"><span></span> รายวิชาของฉัน</p>
+            <h2 id="registered-title">รายวิชาที่ลงทะเบียน</h2>
+          </div>
+          <span class="credit-total">รวม <b>18</b> หน่วยกิต</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>รหัสวิชา</th>
+                <th>รายวิชา</th>
+                <th>แบบการศึกษา</th>
+                <th>หน่วยกิต</th>
+                <th>กลุ่ม</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="รหัสวิชา">10301211</td>
+                <td data-label="รายวิชา">
+                  <strong>คณิตศาสตร์สำหรับวิทยาการคอมพิวเตอร์</strong
+                  ><small>Mathematics for Computer Science</small>
+                </td>
+                <td data-label="แบบการศึกษา">A-F(E)</td>
+                <td data-label="หน่วยกิต">3</td>
+                <td data-label="กลุ่ม">1</td>
+              </tr>
+              <tr>
+                <td data-label="รหัสวิชา">10301223</td>
+                <td data-label="รายวิชา">
+                  <strong>ฐานข้อมูลโครงสร้างเชิงสัมพันธ์</strong
+                  ><small>Structure Relational Database</small>
+                </td>
+                <td data-label="แบบการศึกษา">A-F(E)</td>
+                <td data-label="หน่วยกิต">3</td>
+                <td data-label="กลุ่ม">1</td>
+              </tr>
+              <tr>
+                <td data-label="รหัสวิชา">10700313</td>
+                <td data-label="รายวิชา">
+                  <strong>ภาษาอังกฤษเชิงวิทยาศาสตร์และนวัตกรรม</strong
+                  ><small>English for Science and Innovation</small>
+                </td>
+                <td data-label="แบบการศึกษา">A-F(E)</td>
+                <td data-label="หน่วยกิต">3</td>
+                <td data-label="กลุ่ม">1</td>
+              </tr>
+              <tr>
+                <td data-label="รหัสวิชา">10301225</td>
+                <td data-label="รายวิชา">
+                  <strong>วิศวกรรมซอฟต์แวร์</strong
+                  ><small>Software Engineering</small>
+                </td>
+                <td data-label="แบบการศึกษา">A-F(E)</td>
+                <td data-label="หน่วยกิต">3</td>
+                <td data-label="กลุ่ม">1</td>
+              </tr>
+              <tr>
+                <td data-label="รหัสวิชา">10301231</td>
+                <td data-label="รายวิชา">
+                  <strong>เว็บเทคโนโลยี</strong><small>Web Technology</small>
+                </td>
+                <td data-label="แบบการศึกษา">A-F(E)</td>
+                <td data-label="หน่วยกิต">3</td>
+                <td data-label="กลุ่ม">1</td>
+              </tr>
+              <tr>
+                <td data-label="รหัสวิชา">10301222</td>
+                <td data-label="รายวิชา">
+                  <strong>โครงสร้างข้อมูลและอัลกอริทึม</strong
+                  ><small>Data Structure and Algorithm</small>
+                </td>
+                <td data-label="แบบการศึกษา">A-F(E)</td>
+                <td data-label="หน่วยกิต">3</td>
+                <td data-label="กลุ่ม">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- สรุปข้อมูลและปุ่มดำเนินการหลัก -->
+      <section class="registration-summary">
+        <div>
+          <span>จำนวนหน่วยกิตรวม</span
+          ><strong>18 <small>หน่วยกิต</small></strong>
+        </div>
+        <div class="summary-actions">
+          <button class="button button-secondary" type="button">
+            พิมพ์ใบลงทะเบียน</button
+          ><button class="button button-primary" type="button">
+            ยืนยันการลงทะเบียน <span>→</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ประวัติการทำรายการล่าสุด ช่วยตรวจสอบความถูกต้อง -->
+      <section class="history-panel" aria-labelledby="history-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow"><span></span> บันทึกรายการ</p>
+            <h2 id="history-title">ประวัติการทำรายการ</h2>
+          </div>
+        </div>
+        <div class="history-item">
+          <span class="history-number">01</span>
+          <div>
+            <strong>ลงทะเบียนเรียนสำเร็จ</strong>
+            <p>เพิ่มรายวิชา 6 รายการ · 18 หน่วยกิต</p>
+          </div>
+          <time>22 มิ.ย. 2569<br /><small>10:30 น.</small></time>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
